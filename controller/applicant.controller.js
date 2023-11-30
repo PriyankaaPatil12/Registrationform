@@ -1,7 +1,7 @@
-import ApplicantModel from "../model/Applicant.model";
 import multer from "multer";
 import fs from "fs";
 import path from "path";
+import ApplicantModel from "../model/applicant.model"
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
