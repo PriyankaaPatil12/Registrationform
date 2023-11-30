@@ -24,10 +24,7 @@ app.listen(PORT, () => {
   async function main() {
     const uri = process.env.DB_NAME;
     mongoose
-      .connect(uri, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      })
+      .connect(uri)
       .then(() => {
         console.log("connected to mongodb");
       })
