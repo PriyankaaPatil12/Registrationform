@@ -12,7 +12,7 @@ app.use(express.json());
 
 var corsOptions = {
   origin:
-    "https://pri-registration-form.netlify.app",
+    "https://playful-gaufre-e218b0.netlify.app",
   methods: ["GET", "POST"], // or other HTTP methods
   allowedHeaders: ["Content-Type", "Authorization"], // or other headers
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
