@@ -11,9 +11,14 @@ const PORT = process.env.PORT || 8009;
 app.use(express.json());
 
 var corsOptions = {
-    origin: "*",
-    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-  };
+  origin:
+    "https://pri-registration-form.netlify.app",
+  methods: ["GET", "POST"], // or other HTTP methods
+  allowedHeaders: ["Content-Type", "Authorization"], // or other headers
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+app.use(cors(corsOptions));
   app.use(cors(corsOptions));
   app.use(express.static(__dirname));
   
